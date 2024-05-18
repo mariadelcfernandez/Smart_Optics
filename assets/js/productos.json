@@ -1,0 +1,43 @@
+[
+	{
+		"precio": 15090,
+		"id": 1,
+		"title": "Gaffas de Sol",
+		"thumbnailUrl": "./assets/img/img1.jpg"
+	},
+
+	{
+		"precio": 10990,
+		"id": 2,
+		"title": "Lentes plata",
+		"thumbnailUrl": "./assets/img/img7.jpg"
+	},
+
+	{
+		"precio": 28500,
+		"id": 3,
+		"title": "Gaffas Unisex",
+		"thumbnailUrl": "./assets/img/img1.jpg"
+	},
+
+	{
+		"precio": 45000,
+		"id": 4,
+		"title": "lente Negro",
+		"thumbnailUrl": "./assets/img/img1.jpg"
+	},
+	
+
+	{
+		"precio": "25000",
+        "id":5,
+        "title":"Unisex Marron",
+        "thumbnailUrl":"./assets/img/img7.jpg"
+	},
+	{
+		"precio": "35000",
+        "id":6,
+        "title":"Unisex Marron",
+        "thumbnailUrl":"./assets/img/img7.jpg"
+	}
+]

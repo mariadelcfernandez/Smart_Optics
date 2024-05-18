@@ -11,7 +11,15 @@ body {
 
 }
 
-
+#boton-contacto{
+   
+    float:center;
+    cursor:pointer;
+    width: 50%;
+    height: 35px;
+    font-size: 20px;
+    margin-bottom: 1%;
+}
 
 .container {
     display: flex;
@@ -26,8 +34,29 @@ body {
     padding: 100px 10px 100px 100px;
     align-items: center;    
 }
+/*carousel y cards*/
+.carousel-section img,
+.card-section img {
+    height: 50vh;
+    object-fit: cover;
+}
 
-
+.card-section img {
+    height: 30vh;
+   
+}
+.card-carrito {
+    height: 20vh;
+    object-fit: cover; 
+   
+}
+/* footer*/
+#pie {
+    width: 100%;
+    color: black; 
+    font-size: 18px;
+     padding:0;
+}
 .footer {
     background-color: #242628;
     padding: 15px;
@@ -67,69 +96,282 @@ body {
     padding-left: 8px;
 }
 
-PARA REGISTRO
 
-.container_form  {
-    background-color: red;
-    padding: 20px;
+
+.footer-container {
+   background-color: black;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 10px;
+   align-items: flex-start;
+   justify-content: center;
+
 }
 
-.boton {
-    background-color: cadetblue;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    padding: 5px;
+.footer-container {
+    margin: 0 auto;
+    padding: 10px;
+
 }
 
-
-.form-register {
-    width: max-content;
-    background-color: rgb(235, 225, 225);
-    margin: auto;
-    margin-top: 35px;
-    padding: 30px;
-    border-style: solid;
-    border-color: black;
-    border-radius: 25px;
-    margin-bottom: 35px;
-    box-shadow: 10px 10px #999;
+.footer-container ul li {
+  line-height: 1.2;
 }
 
-label {
- color: black;
- padding-top: 30 px;
- font-size: 15px;
+.footer {
+    color: aqua;
+    font-size: 11px;
+    padding: 20px 0;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
-input {
-   background-color: rgb(245, 240, 240);
-   border-radius: 20px;
-   height: 20px;
+.footer-container a {
+    font-family: 'Poppins', sans-serif;
+    color: black;
 }
 
-.padre{
+/* Estilo Login */
+
+
+
+.login-container {
+    height: 700px;
+    width: 750px;
+    margin: 6em auto;
+    border-radius:10px;
     display: flex;
     justify-content: space-between;
-    border-color: black;
-    border: solid;
-    padding: 15px ;
-    height: 300px;
+    overflow: hidden;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+
+.login-info-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 0.5rem;
+    background-color: rgb(45, 46, 46);
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.image-container {
+    width: 50%;
+    box-sizing: border-box;
+    background-color: #eadbff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.title {
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 60px;
+    letter-spacing: 2px;
+    color: var(--title-bg);
+    padding-top: 40px;
+    padding-bottom:2px;
+}
+/*text area contacto */
+#exampleFormControlTextarea1{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+.social-login {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    padding-top: 35px;
+}
+
+.social-login-element {
+    width: 12.5rem;
+    height: 3.75rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.social-login-element img {
+    width: 1.875rem;
+    height: 1.875rem;
+    position: relative;
+    top: 0;
+    left: -0.625rem;
+}
+
+
+.social-login-element:hover {
+    background-color: burlywood;
+    cursor: pointer;
+}
+.h4 #titulo-redes{
+    text-decoration: whitesmoke;
+}
+.login-info-container > p {
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.inputs-container {
+    height: 55%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input, .btn {
+    width: 80%;
+    height: 35px;
+    font-size: 20px;
+}
+
+.input {
+    padding-left: 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600px;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+
+.input:hover {
+    border: 2px solid var(--button-bg);
+}
+
+
+/* REGISTRO */
+
+.form-register {
+    width: 50%;
+    background: #24303c;
+    padding: 30px;
+    margin-top:80px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .form-register h4 {
+    font-size: 22px;
     margin-bottom: 20px;
-    width: 1500px;
-    margin-left: 160px;
-}
+  }
+  
+  .controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+  }
+  
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
 
-.color-coments {
-   color: black;
-}
+  }
+  
+  .form-register a {
+    color: white;
+    text-decoration: none;
+    
+  }
+  
+  .form-register a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .form-register .botons {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
 
-MEDIAS QUERIES
+
+
+/*MEDIAS QUERIES*/
 
 
 @media (max-width:600px) {
     .container, .class_nav { 
-    display: flex;
-    flex-direction:column; 
-    } 
+        display: flex;
+        flex-direction:column; 
 }
+}
+
+@media (max-width:601px) {
+    .footer-links, .footer-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-content: center;
+        background-color: #1d1c1c;
+        padding: 80px;
+        gap: 30px;
+}
+}
+
+@media (max-width: 400px) {
+    .footer-links, .footer-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-content: center;
+        background-color: #1d1c1c;
+        padding-top: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        gap: 5px;
+    }
+}
+
+
+/*MEDIAS QUERIES*/
+
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px)
+ {  }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {  }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { }
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) { }

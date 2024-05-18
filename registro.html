@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
     
-    <title>Search | Smart Opticas</title>
+    <title>Registro</title>
  <!--Apis con jsons e Imagen de icon-->
 <!---------------------------------------------->
 <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/ic/apple-icon-57x57.png">
@@ -91,13 +91,30 @@
         </div>
         </nav>
     </header>
-    <main>
-        <div  style= "display:inline-block;background-color: hsl(53, 87%, 69%)">
-            <img src="./assets/img/BannerCanva.png" alt="" style= "background-color: hsl(53, 87%, 69%); margin:auto;cursor: zoom-out; width: 100%; height: 60%">
-        </div>
-    </main>
-    <!------------------Footer-------------------->
-    <footer>
+  <main>
+    <section class="form-register">
+      <h4>Formulario Registro</h4>
+      <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre" required>
+      <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido"required>
+      <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo"required>
+      <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña"required>
+      <h1 style="padding-bottom: 10px;"> Genero:</h1>
+      <input type="radio" name="gender" value="Mujer" checked> Mujer
+      <input type="radio" name="gender" value="Hombre"> Hombre
+      <input type="radio" name="gender" value="Otro"> Otro
+      
+      <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+      
+      <button class="botons" type="submit" value="Registrar">Registrar</button>
+      
+      <p><a href="./login.html">¿Ya tengo Cuenta?</a></p>
+    </section>
+  </main>
+
+
+
+<!------------------Footer-------------------->
+<footer>
     <div class="footer-links" id="pie">
       <div class="footer-container">
         <ul>
@@ -160,10 +177,5 @@
        </div>
    </div>
    </footer>
-
-
-  <!------------------------------------------------------------------------------------------------->
- <script src="./assets/js/app.js"></script> 
- </body>
-
+</body>
 </html>
