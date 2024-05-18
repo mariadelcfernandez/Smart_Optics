@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 )
 
 cards.addEventListener('click', e =>{
+    //console.log(e)
     addCarrito(e)
 })
 
@@ -48,7 +49,7 @@ const pintarCard = data=>{
     })
     cards.appendChild(fragment)
 }
-
+//Agrega mas productos al carro
 const addCarrito = e =>{
     //console.log(e.target)
     //console.log(e.target.classList.contains('btn-dark'))
@@ -69,7 +70,7 @@ const setCarrito = item => {
         id: item.querySelector('.btn-dark').dataset.id,
         cantidad: 1
     }
-
+//si el id del producto es el mismo le suma uno mas
     if(carrito.hasOwnProperty(producto.id)){
         producto.cantidad = carrito[producto.id].cantidad + 1
     }
